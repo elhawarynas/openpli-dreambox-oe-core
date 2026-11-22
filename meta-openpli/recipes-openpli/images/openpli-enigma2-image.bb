@@ -6,6 +6,8 @@ IMAGE_FEATURES += "package-management"
 ENIGMA2_PLUGINS = " \
 	enigma2-plugin-extensions-audiosync \
 	enigma2-plugin-extensions-autobackup \
+	enigma2-plugin-extensions-arabicsavior \
+	enigma2-plugin-extensions-backupflash \
 	enigma2-plugin-extensions-bitrate \
 	enigma2-plugin-extensions-cdinfo \
 	enigma2-plugin-extensions-cutlisteditor \
@@ -24,6 +26,12 @@ ENIGMA2_PLUGINS = " \
 	enigma2-plugin-extensions-tmbd \
 	enigma2-plugin-extensions-youtube \
 	enigma2-plugin-extensions-weatherplugin \
+	enigma2-plugin-extensions-weatherplugin \
+	enigma2-plugin-extensions-xtraevent \
+	enigma2-plugin-extensions-bouquetmakerxtream \
+	enigma2-plugin-extensions-subssupport \
+	enigma2-plugin-extensions-xtraevent \
+	enigma2-plugin-extensions-jediepgxtream \
 	\
 	enigma2-plugin-softcams-ncam \
 	\
@@ -40,6 +48,7 @@ ENIGMA2_PLUGINS = " \
 	enigma2-plugin-systemplugins-softwaremanager \
 	enigma2-plugin-systemplugins-videoenhancement \
 	enigma2-plugin-systemplugins-videotune \
+	enigma2-plugin-systemplugins-signalfinder \
 	${@bb.utils.contains("MACHINE_FEATURES", "fcc", "enigma2-plugin-systemplugins-fastchannelchange", "", d)} \
 	"
 
@@ -69,6 +78,10 @@ IMAGE_INSTALL = " \
 	e2fsprogs-mke2fs \
 	e2fsprogs-tune2fs \
 	enigma2 \
+	ffmpeg \
+	exteplayer3 \
+	dosfstools \
+	openvpn \
 	nano \
 	mc \
 	mc-shell \
